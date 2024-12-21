@@ -1,7 +1,9 @@
 <h1 class="nombre-pagina">Recuperar Contraseña</h1>
 <p class="descripcion-pagina">Restablece tu contraseña escribiendo tu email en el siguiente formulario.</p>
 
-<form action="/olvide" class="formulario" method="post">
+<?php include_once __DIR__ . '/../templates/alertas.php'; ?>
+
+<form action="/olvide" class="formulario" method="POST">
     <div class="campo">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="Ingresa tu email.">
